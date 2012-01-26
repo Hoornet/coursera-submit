@@ -32,7 +32,7 @@ File.open(File.expand_path("~/.submit_config"), 'r') do |f|
   end
 end
 
-challenge_url = URI.parse("https://berkeley.campus-class.org/saas-staging/assignment/challenge")
+challenge_url = URI.parse("https://berkeley.campus-class.org/saas/assignment/challenge")
 challenge_http = Net::HTTP.new(challenge_url.host, challenge_url.port)
 challenge_http.use_ssl = true
 
@@ -58,7 +58,7 @@ params_hash = {
   "state" => sig
 }
 
-submit_url = URI.parse("https://berkeley.campus-class.org/saas-staging/assignment/submit")
+submit_url = URI.parse("https://berkeley.campus-class.org/saas/assignment/submit")
 submit_http = Net::HTTP.new(submit_url.host, submit_url.port)
 submit_http.use_ssl = true
 
