@@ -67,4 +67,4 @@ submit_request.set_form_data params_hash
 
 submit_response = submit_http.request submit_request
 
-puts submit_response.body.include?("Your submission has been accepted") ? submit_response.body : "Error with submission!"
+puts submit_response.body
