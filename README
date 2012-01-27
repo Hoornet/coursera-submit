@@ -4,5 +4,5 @@ If using rvm (not on the VM), run 'rvmsudo rake'.
 
 After successfully running the rake task, run 'submit-config' and enter your email and submission password.
 
-To submit assignments, 'submit <assignment name> <file to submit>'
+To submit assignments, 'submit <assignment sid> <file to submit>'
 
